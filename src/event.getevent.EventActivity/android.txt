@@ -1,0 +1,20 @@
+GET/ POST Example
+http://www.softwarepassion.com/android-series-get-post-and-multipart-post-requests/
+
+SEARCH
+http://developer.android.com/guide/topics/search/search-dialog.html#SearchableConfiguration
+
+download file
+
+upload file
+
+phone call
+http://www.mkyong.com/android/how-to-make-a-phone-call-in-android/
+
+popup- Toast-makeText(EventActivity.this, "String","Srting");
+
+SDcard
+http://xjaphx.wordpress.com/2011/06/26/create-and-use-emulated-sd-card/
+
+getStaff
+http://blog.sptechnolab.com/2011/02/10/android/android-connecting-to-mysql-using-php/

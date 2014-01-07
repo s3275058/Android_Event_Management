@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffff"
+    android:orientation="vertical" >
+
+    <!-- Editext for Search -->
+
+    <EditText
+        android:id="@+id/eventList_inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search event&apos;s name..."
+        android:inputType="textVisiblePassword" />
+
+    <!-- List View -->
+
+    <ListView
+        android:id="@+id/eventList_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="#000000" />
+
+    <Button
+        android:id="@+id/eventDetail_get_event_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Get Event" />
+
+    <Button
+        android:id="@+id/eventDetail_newevent_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="New Event" />
+
+    <Button
+        android:id="@+id/eventDetail_logout_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Logout" />
+
+</LinearLayout>

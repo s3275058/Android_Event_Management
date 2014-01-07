@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#fff" >
+
+    <!-- Editext for Search -->
+
+    <EditText
+        android:id="@+id/staffList_inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search staff&apos;s name..."
+        android:inputType="textVisiblePassword" />
+
+    <!-- Add New Staff for Search -->
+
+    <Button
+        android:id="@+id/staffList_addManually"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Manually" />
+    
+        <Button
+        android:id="@+id/staffList_addFromServer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add From Server" />
+    
+        <Button
+        android:id="@+id/staffList_back"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Back" />
+
+    <!-- Add Staff From Server -->
+
+
+
+    <!-- List View -->
+
+    <ListView
+        android:id="@+id/staffList_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"/>
+
+
+</LinearLayout>

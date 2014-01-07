@@ -1,0 +1,43 @@
+public void onCreate(Bundle b) {
+	super.onCreate(b);
+
+	// initialize search box and list
+	EditText inputSearch = (EditText) findViewById(R.id.eventList_inputSearch);
+	ListView list = (ListView) findViewById(R.id.eventList_list);
+
+	// replace generic type (Object in this example) with your object of choice
+	// this array list holds the list item data that will be displayed
+	ArrayList<Object> array = new ArrayList<Object>();
+	ArrayAdapter<Object> adapter = new ArrayAdapter<Object>(this, array);
+	list.setAdapter(adapter);
+
+	inputSearch.addTextChangedListener(new TextWatcher() {
+
+		// need to override this function
+		@Override
+		public void onTextChanged(CharSequence cs, int arg1, int arg2,
+				int arg3) {
+			// if you override toString() of the list item object, 
+			// include this line
+			// 
+			// CurrentGUI is the class name of the activiy holding the 
+			// list view
+			CurrentGUI.this.adapter.getFilter().filter(cs);
+			
+			// else write your own search engine and visual effect 
+			// handling here
+		}
+
+		@Override
+		public void beforeTextChanged(CharSequence arg0, int arg1,
+				int arg2, int arg3) {
+			// handle fancy visual effect or other function if you want
+		}
+
+		@Override
+		public void afterTextChanged(Editable arg0) {
+			// handle fancy visual effect or other function if you want
+		}
+
+	});
+}
